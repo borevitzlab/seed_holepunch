@@ -35,7 +35,7 @@ module seed_hole_punch(){
     color("brown")
     translate([horizontal_size/2,horizontal_size/2,puncher_height-fudge])
     rotate([0,0,45])
-    shp_punch_bits(4, 2, 3);
+    shp_punch_bits(hole_num, punch_width, punch_depth);
 }
 
 seed_hole_punch();
