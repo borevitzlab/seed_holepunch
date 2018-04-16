@@ -1,15 +1,19 @@
 // seed hole puncher
 // by Ming-Dao Chia
 
-horizontal_size = 40; // Main handle face
-puncher_height = 30; // Height of main handle bit
+// Settings
+horizontal_size = 40; // (mm) Main handle face
+puncher_height = 30; // (mm) Height of main handle bit
 
-hole_num = 4; // Amount of hole punchers
-punch_depth = 3; // How long each punch bit is
-punch_width = 2; // Diameter of punch bit
-punch_spacing = 11; // Space between each punch bit
+hole_num = 4; // Number of hole punchers
+punch_depth = 3; // (mm) How long each punch bit is
+punch_width = 2; // (mm) Diameter of punch bit
+punch_spacing = 11; // (mm) Space between each punch bit
+punch_correction = 45; // (degrees) Rotates all the bits by this angle to align them to the box
 
-circle_res = 16; // set to 16 for faster previews, higher e.g. 128 for printing
+// Advanced settings
+circle_res = 64; // number of circle faces to approximate circle
+// set to 16 for faster previews, higher e.g. 128 for printing
 fudge = 0.001; // tolerance to ensure manifold objects
 
 module shp_punch_bit(diameter, depth){
